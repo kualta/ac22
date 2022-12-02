@@ -13,3 +13,11 @@ path = "src/day1/part1.rs"
 [[example]]
 name = "day1-2"
 path = "src/day1/part2.rs"
+
+[[example]]
+name = "day2-1"
+path = "src/day2/part1.rs"
+
+[[example]]
+name = "day2-2"
+path = "src/day2/part2.rs"
