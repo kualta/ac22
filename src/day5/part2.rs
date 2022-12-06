@@ -17,11 +17,8 @@ fn main() {
     });
     stacks.iter_mut().for_each(|stack| stack.reverse());
 
-    // clean the input
-    input.advance_by(2).unwrap();
-
     // simulate rearragement
-    input.for_each(|line| {
+    input.skip(2).for_each(|line| {
         let mut values = line
             .split_whitespace()
             .filter_map(|str| str.parse::<usize>().ok());
