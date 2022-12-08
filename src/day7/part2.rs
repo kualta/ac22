@@ -39,13 +39,11 @@ fn execute_cmd<'a>(
     tree: &mut BTreeMap<Vec<&'a str>, u32>,
     context: &mut Vec<&'a str>,
 ) {
-    println!("{command:?}");
     match command[0] {
         "$" => {
             if let "cd" = command[1] {
                 if let ".." = command[2] {
                     let self_size = tree[context];
-                    println!("{:?} - {}", context, self_size);
                     context.pop();
                     tree.entry(context.clone())
                         .and_modify(|size| *size += self_size);
