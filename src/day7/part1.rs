@@ -7,15 +7,6 @@ struct Node {
     parent: Option<Rc<RefCell<Node>>>,
 }
 
-impl Node {
-    fn print(&self, indent: usize) {
-        println!("{:indent$}{}", indent, self.size);
-        self.children
-            .iter()
-            .for_each(|child| child.as_ref().borrow().print(indent + 2));
-    }
-}
-
 fn main() {
     let input = fs::read_to_string("src/day7/input.txt").unwrap() + "\n";
 
