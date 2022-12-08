@@ -1012,4 +1012,3 @@ $ cd ..
 $ cd zcwpb
 $ ls
 73403 fcfqp.hpq
-

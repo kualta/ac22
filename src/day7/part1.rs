@@ -17,7 +17,7 @@ impl Node {
 }
 
 fn main() {
-    let input = fs::read_to_string("src/day7/input.txt").unwrap();
+    let input = fs::read_to_string("src/day7/input.txt").unwrap() + "\n";
 
     let root = Rc::new(RefCell::new(Node::default()));
     let mut current = Rc::clone(&root);
