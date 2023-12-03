@@ -1,14 +1,14 @@
-## Advent of Code 2022 solutions in **Rust**
+## Advent of Code 2022
 
 
 ### How to run
 1. Clone the repo
 ```bash
-git clone git@github.com:lectromoe/AoC-2022.git
+git clone git@github.com:lectromoe/ac22.git
 ```
 2. Open repo directory
 ```
-cd AoC-2022/
+cd ac22/
 ```
 3. To run a solution to a specific problem replace `day` and `part` with a desired number
 ```
